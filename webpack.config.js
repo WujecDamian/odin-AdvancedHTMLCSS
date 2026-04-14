@@ -1,5 +1,5 @@
 // webpack.config.js
-import path from 'node:path'
+import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default {
