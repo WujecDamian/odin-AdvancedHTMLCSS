@@ -1,0 +1,25 @@
+p {
+  animation: slide-in 3s;
+}
+p span {
+  display: inline-block;
+  animation: grow-shrink 3s infinite;
+}
+@keyframes slide-in {
+  0% {
+    transform: translate(150vw, 0) scaleX(200%);
+  }
+  100% {
+    transform: translate(0, 0) scaleX(100%);
+  }
+}
+@keyframes grow-shrink {
+  25%,
+  75% {
+    transform: scaleY(100%);
+  }
+  50% {
+    transform: scaleY(200%) scaleX(120%);
+    color: magenta;
+  }
+}
