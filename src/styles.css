@@ -1,5 +1,5 @@
 p {
-  animation: slide-in 3s;
+  animation: slide-in 3s infinite alternate;
 }
 p span {
   display: inline-block;
