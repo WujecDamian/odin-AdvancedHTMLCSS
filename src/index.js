@@ -10,17 +10,17 @@ watchMeElement.addEventListener("animationiteration", listener);
 watchMeElement.className = "slide-in";
 
 function listener(event) {
-  const span = document.createElement("span");
+  const li = document.createElement("li");
   switch (event.type) {
     case "animationstart":
-      span.textContent = `Started: elapsed time is ${event.elapsedTime}!`;
+      li.textContent = `Started: elapsed time is ${event.elapsedTime}!`;
       break;
     case "animationend":
-      span.textContent = `Ended: elapsed time is ${event.elapsedTime}!`;
+      li.textContent = `Ended: elapsed time is ${event.elapsedTime}!`;
       break;
     case "animationiteration":
-      span.textContent = `New loop started at time ${event.elapsedTime}!`;
+      li.textContent = `New loop started at time ${event.elapsedTime}!`;
       break;
   }
-  document.querySelector("#output").appendChild(span);
+  document.querySelector("#output").appendChild(li);
 }
